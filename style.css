@@ -13,3 +13,41 @@
   --text-light: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-section {
+  max-width: 1110px;
+  max-height: 100vh;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header,
+.rating {
+  flex-basis: 50%;
+}
+
+.main-header {
+  color: var(--primary-magenta);
+  font-size: 2.5rem;
+  width: 70%;
+  margin-bottom: 0.5rem;
+}
+
+.sub-header {
+  color: var(--secondary-magenta);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.testimony {
+  flex-basis: 100%;
+}
