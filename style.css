@@ -32,7 +32,7 @@ body {
 
 .header,
 .rating {
-  flex-basis: 50%;
+  flex: 1 1 50%;
 }
 
 .main-header {
@@ -96,7 +96,7 @@ body {
 }
 
 .testimony {
-  flex-basis: 100%;
+  flex: 1 1 100%;
   margin-top: 2.8rem;
   height: 290px;
   display: flex;
@@ -150,4 +150,47 @@ body {
 
 .testimony-body {
   line-height: 1.6em;
+}
+
+@media (max-width: 960px) {
+  .social-section {
+    flex-direction: column;
+    max-width: 500px;
+    max-height: max-content;
+    flex-wrap: nowrap;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .main-header {
+    width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .sub-header {
+    width: 100%;
+    font-size: clamp(13px, 2vw, 15px);
+  }
+
+  .rating {
+    gap: 1rem;
+  }
+
+  .rating-item {
+    width: 100%;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .testimony {
+    flex-direction: column;
+  }
+
+  .testimony-body {
+    font-size: clamp(11px, 2vw, 15px);
+  }
 }
