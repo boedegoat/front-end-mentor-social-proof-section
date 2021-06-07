@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Spartan', sans-serif;
+}
+
+:root {
+  --primary-magenta: hsl(300, 43%, 22%);
+  --secondary-magenta: hsl(303, 10%, 53%);
+  --primary-pink: hsl(333, 80%, 67%);
+  --text-light: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
