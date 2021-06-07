@@ -23,7 +23,7 @@ body {
 }
 
 .social-section {
-  max-width: 1110px;
+  max-width: 1200px;
   max-height: 100vh;
   margin: 2rem;
   display: flex;
@@ -64,6 +64,7 @@ body {
   padding-left: 2rem;
   display: flex;
   align-items: center;
+  user-select: none;
   gap: 2rem;
 }
 
@@ -78,7 +79,6 @@ body {
   color: var(--primary-magenta);
   font-size: 15px;
   padding-top: 5px;
-  user-select: none;
 }
 
 .rating-item:nth-child(1) {
@@ -97,4 +97,57 @@ body {
 
 .testimony {
   flex-basis: 100%;
+  margin-top: 2.8rem;
+  height: 290px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.testimony-item {
+  background: var(--primary-magenta);
+  height: max-content;
+  color: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.testimony-item:nth-child(2) {
+  align-self: center;
+}
+
+.testimony-item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.testimony-profile {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.profile-name,
+.profile-status {
+  font-size: inherit;
+}
+
+.profile-name {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.profile-status {
+  margin-top: 0.5rem;
+  color: var(--primary-pink);
+  font-weight: 400;
+}
+
+.testimony-body {
+  line-height: 1.6em;
 }
