@@ -10,7 +10,7 @@
   --primary-magenta: hsl(300, 43%, 22%);
   --secondary-magenta: hsl(303, 10%, 53%);
   --primary-pink: hsl(333, 80%, 67%);
-  --text-light: hsl(300, 24%, 96%);
+  --light: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -45,7 +45,54 @@ body {
 .sub-header {
   color: var(--secondary-magenta);
   font-weight: 500;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  width: 90%;
+  font-size: 15px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rating-item {
+  background: var(--light);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 8px;
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rating-stars {
+  flex-basis: 20%;
+  display: flex;
+  gap: 5px;
+}
+
+.rating-label {
+  font-weight: 700;
+  color: var(--primary-magenta);
+  font-size: 15px;
+  padding-top: 5px;
+  user-select: none;
+}
+
+.rating-item:nth-child(1) {
+  align-self: flex-start;
+}
+
+.rating-item:nth-child(2) {
+  align-self: center;
+  margin-top: auto;
+}
+
+.rating-item:nth-child(3) {
+  align-self: flex-end;
+  margin-top: auto;
 }
 
 .testimony {

@@ -33,15 +33,15 @@
       <!-- rating -->
       <ul class="rating">
         <li class="rating-item">
-          <span class="rating-stars"></span>
+          <span class="rating-stars 5"></span>
           <p class="rating-label">Rated 5 Stars in Reviews</p>
         </li>
         <li class="rating-item">
-          <span class="rating-stars"></span>
+          <span class="rating-stars 5"></span>
           <p class="rating-label">Rated 5 Stars in Report Guru</p>
         </li>
         <li class="rating-item">
-          <span class="rating-stars"></span>
+          <span class="rating-stars 5"></span>
           <p class="rating-label">Rated 5 Stars in BestTech</p>
         </li>
       </ul>
@@ -96,5 +96,17 @@
       &nbsp; | &nbsp; Coded by
       <a href="https://www.github.com/boedegoat" target="_blank">boedegoat</a>
     </footer> -->
+
+    <script>
+      document.querySelectorAll('.rating-stars').forEach((ratingStar) => {
+        const star = ratingStar.className.slice(-1)
+        for (let i = 0; i < star; i++) {
+          const starImg = document.createElement('img')
+          starImg.setAttribute('src', 'images/icon-star.svg')
+          starImg.setAttribute('alt', 'icon-star')
+          ratingStar.appendChild(starImg)
+        }
+      })
+    </script>
   </body>
 </html>
