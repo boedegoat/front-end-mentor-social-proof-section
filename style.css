@@ -23,7 +23,7 @@ body {
   background-image: url(images/bg-pattern-top-desktop.svg),
     url(images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
-  background-position: bottom 51vh right 70vw, top 10vh left 26vw;
+  background-position: top left, bottom right;
 }
 
 .social-section {
@@ -156,11 +156,26 @@ body {
   line-height: 1.6em;
 }
 
+footer {
+  font-size: 13px;
+  color: #777;
+  font-weight: 500;
+  cursor: default;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  color: var(--primary-pink);
+}
+
 @media (max-width: 960px) {
   body {
     background-image: url(images/bg-pattern-top-mobile.svg),
       url(images/bg-pattern-bottom-mobile.svg);
-    background-position: top left, bottom right;
   }
 
   .social-section {
